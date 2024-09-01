@@ -5,14 +5,14 @@ public class Producto {
    protected int NumeroLote;
    
    //metodos getters y setters
-   private void setFechaCaducidad(String _FechaCaducidad) {
+   public void setFechaCaducidad(String _FechaCaducidad) {
 	   this.FechaCaducidad = _FechaCaducidad;
    }
-   private void setNroLote(int _NroLote) {
+   public void setNroLote(int _NroLote) {
 	   NumeroLote = _NroLote;
    }
-   private String getFechaCaducidad() {return FechaCaducidad;}
-   private int getNroLote() {return NumeroLote;}
+   public String getFechaCaducidad() {return FechaCaducidad;}
+   public int getNroLote() {return NumeroLote;}
    
    //Constructores 
    public Producto() {
