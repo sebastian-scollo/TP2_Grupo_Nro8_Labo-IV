@@ -16,6 +16,11 @@ public class ProductoFresco extends Producto {
 		PaisOrigen = p;
 	}
 	
+	public ProductoFresco(int nroLote, String fechaCaducidad, String f, String p) {
+		super(nroLote, fechaCaducidad); 
+		this.FechaEnvasado = f;
+		this.PaisOrigen = p;
+	}
 	// METODOS GET / SET
 	
 	public String getFechaEnvasado() {
