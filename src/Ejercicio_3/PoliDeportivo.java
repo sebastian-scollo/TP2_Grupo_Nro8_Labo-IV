@@ -1,28 +1,19 @@
 package Ejercicio_3;
 
-public class PoliDeportivo {
- private double nroSuperficie;
+public class PoliDeportivo implements Edificio, InstalacionSport {
  private String nombre;
  
  //Constructores
  public PoliDeportivo() {
-		this.nroSuperficie = 0;
 		this.nombre = "Sin nombre";
 }
  
- public PoliDeportivo(double nroSuperficie, String nombre) {
+ public PoliDeportivo(String nombre) {
 		
-		this.nroSuperficie = nroSuperficie;
 		this.nombre = nombre;
 	}
  
  //getter y setters
-public double getNroSuperficie() {
-	return nroSuperficie;
-}
-public void setNroSuperficie(double nroSuperficie) {
-	this.nroSuperficie = nroSuperficie;
-}
 public String getNombre() {
 	return nombre;
 }
@@ -33,7 +24,25 @@ public void setNombre(String nombre) {
 
 @Override
 public String toString() {
-	return "PoliDeportivo [nroSuperficie=" + nroSuperficie + ", nombre=" + nombre + "]";
+	return "PoliDeportivo [nombre=" + nombre + "]";
 }
+
+//Implementacion interfaces
+
+@Override
+public int getTipoDeInstalacion() {
+	
+	return 2;
+}
+@Override
+public double getSuperficieEdificio() {
+	
+	return 400;
+}
+
+
+
+
+
  
 }
