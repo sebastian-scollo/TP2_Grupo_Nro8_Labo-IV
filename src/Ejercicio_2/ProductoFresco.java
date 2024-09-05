@@ -7,6 +7,7 @@ public class ProductoFresco extends Producto {
 	// CONSTRUCTORES
 	
 	public ProductoFresco() {
+		super();
 		FechaEnvasado = "00/00/0000";
 		PaisOrigen = "Sin definir";
 	}
